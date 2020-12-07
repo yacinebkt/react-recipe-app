@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+section#contact {
+  background: #fff;
+  color: #000;
+}
+
+section#contact {
+  padding: 20px;
+  min-height: 70vh;
+}
+
+#contact .section-heading {
+  margin: 0 0 2em;
+}
+
+#contact #message {
+  min-height: 132px;
+  height: auto;
+}
+
+/**/
+
+.titel-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titel-menu h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.titel-menu p {
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: #555;
+}
+
+.titel-menu span {
+  font-family: "Sansita Swashed", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ff0157;
+}
+
+/*btn*/
+
+.contactbtn {
+  font-size: 1em;
+  color: white;
+  background: #ff0157;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 35px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+.contactbtn:hover {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+}
+
+/**/
+@media (min-width: 768px) {
+  header .header-content .header-content-inner {
+    padding: 0;
+    height: 300px;
+    top: 50%;
+    margin-top: -150px;
+    left: 50%;
+    margin-left: -300px;
+    width: 600px;
+    position: absolute;
+  }
+  header .header-content .header-content-inner p {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0 0 25px;
+  }
+  header .header-content .header-content-inner h1 {
+    font-size: 75px;
+    line-height: 75px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}

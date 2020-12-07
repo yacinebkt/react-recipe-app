@@ -1,0 +1,22 @@
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Aligner-item {
+  max-width: 100%;
+  width: 90%;
+}
+.text-center {
+  text-align: center;
+}
+.name-rest {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  color: purple;
+  box-shadow: 1px 1px 20px 10px rgba(23, 20, 15, 0.39);
+  font-size: 40px;
+  padding: 15px;
+  border: solid 1px white;
+  font-family: "Dancing Script", cursive;
+}

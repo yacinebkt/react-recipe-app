@@ -1,0 +1,335 @@
+.headersc {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 90px;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.headersc .logo {
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.headersc .logo span {
+  color: #ed1432;
+}
+
+.headersc .navigation {
+  position: relative;
+  display: flex;
+}
+
+.headersc .navigation li {
+  margin-left: 30px;
+}
+
+.headersc .navigation li a {
+  color: white;
+  font-weight: normal;
+  transition: 0.5s;
+}
+
+.headersc.fixednav {
+  background-color: white;
+  padding: 08px 120px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.headersc.fixednav .logo {
+  color: black;
+}
+
+.headersc.fixednav .navigation li a {
+  color: black;
+  font-weight: normal;
+}
+
+.headersc .navigation li a:hover {
+  color: #ed1432;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+/* media*/
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (max-width: 576px) {
+  /* Header 
+  ----------------------------------------*/
+  .headersc {
+    padding: 40px 25px;
+  }
+  .headersc.fixednav {
+    padding: 08px 35px;
+    z-index: 9999999;
+  }
+  .headersc .navigation {
+    display: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: all 3s ease;
+  }
+  .headersc .navigation.active {
+    position: fixed;
+    width: 100%;
+    height: calc(100% -80px);
+    top: 85px;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: white !important;
+    border-radius: 0 0 4% 4%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    opacity: 1;
+  }
+  .headersc .navigation li {
+    text-align: left;
+    /*padding-bottom: 5%;*/
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+  }
+  .headersc .navigation li a {
+    color: black !important;
+    font-size: 1.7rem;
+    padding: 0;
+    margin: 0;
+  }
+  .toggel {
+    position: relative;
+    width: 50px;
+    height: 45px;
+    background: url(../componsnts/img02/togleopenw.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  .toggel.active {
+    background: url(../componsnts/img02/togleclosew.png);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  .headersc.fixednav .toggel {
+    filter: invert(1);
+  }
+
+  /**/
+  .menu {
+    z-index: 1000000;
+    font-weight: bold;
+    font-size: 0.8em;
+    width: 100%;
+    background: #f1f1f1;
+    position: absolute;
+    text-align: center;
+    font-size: 12px;
+  }
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+  }
+  .menu li {
+    display: block;
+    padding: 15px 0 15px 0;
+    border-bottom: #dddddd 1px solid;
+  }
+  .menu li:hover {
+    display: block;
+    background: #ffffff;
+    padding: 15px 0 15px 0;
+    border-bottom: #dddddd 1px solid;
+  }
+  .menu ul li a {
+    text-decoration: none;
+    margin: 0px;
+    color: #666;
+  }
+  .menu ul li a:hover {
+    color: #666;
+    text-decoration: none;
+  }
+  .menu a {
+    text-decoration: none;
+    color: #666;
+  }
+  .menu a:hover {
+    text-decoration: none;
+    color: #666;
+  }
+}
+
+/**/
+
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Header 
+  ----------------------------------------*/
+
+  .headersc {
+    padding: 40px 20px;
+  }
+  .headersc.fixednav {
+    padding: 08px 25px;
+  }
+  .headersc .navigation {
+    display: none;
+  }
+
+  .headersc .navigation.active {
+    position: fixed;
+    width: 100%;
+    height: calc(100% -80px);
+    top: 100px;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: white !important;
+    border-radius: 4%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  }
+  .headersc .navigation li {
+    text-align: left;
+    /*padding-bottom: 5%;*/
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+  }
+  .headersc .navigation li a {
+    color: black !important;
+    font-size: 1.7rem;
+    padding: 0;
+    margin: 0;
+  }
+  .toggel {
+    position: relative;
+    width: 50px;
+    height: 45px;
+    background: url(../componsnts/img02/togleopenw.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  .toggel.active {
+    background: url(../componsnts/img02/togleclosew.png);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  .headersc.fixednav .toggel {
+    filter: invert(1);
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {
+  /**/
+
+  /* Header 
+  ----------------------------------------*/
+  .headersc {
+    padding: 40px 100px;
+  }
+  .headersc.fixednav {
+    padding: 10px 60px;
+  }
+  .headersc .navigation {
+    display: flex;
+  }
+}
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+  /* Header 
+  ----------------------------------------*/
+  .headersc .navigation {
+    display: flex;
+  }
+  .headersc {
+    padding: 40px 100px;
+  }
+  .headersc.fixednav {
+    padding: 10px 120px;
+  }
+}
+
+/*
+
+@media (max-width: 576px) {
+ 
+  .headersc {
+    padding: 40px 25px;
+  }
+  .headersc.fixednav {
+    padding: 08px 35px;
+  }
+  .headersc .navigation {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+  .headersc .navigation.active {
+    position: fixed;
+    width: 40%;
+    height: calc(100% -80px);
+    top: 80px;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: white !important;
+    border-radius: 10%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  }
+  .headersc .navigation li {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+  }
+  .headersc .navigation li a {
+    color: black !important;
+    font-size: 1.7rem;
+    padding: 0;
+    margin: 0;
+  }
+  .toggel {
+    position: relative;
+    width: 50px;
+    height: 45px;
+    background: url(../componsnts/img02/togleopenw.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  .toggel.active {
+    background: url(../componsnts/img02/togleclosew.png);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  .headersc.fixednav .toggel {
+    filter: invert(1);
+  }*/

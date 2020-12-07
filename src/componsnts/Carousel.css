@@ -1,0 +1,73 @@
+.couche:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: 1;
+  z-index: -1;
+}
+
+.flowhero {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+
+  border-radius: 25%;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.75);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.hero h1 {
+  font-size: 5rem;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5%;
+  font-family: "Sansita Swashed", cursive;
+}
+
+.hero h3 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5%;
+}
+
+#carouseltop01 .carousel .carousel-inner .carousel-item .hero {
+  opacity: 0;
+  -webkit-transition: 0.5s all ease-in-out 0.1s;
+  -moz-transition: 0.5s all ease-in-out 0.1s;
+  -ms-transition: 0.5s all ease-in-out 0.1s;
+  -o-transition: 0.5s all ease-in-out 0.1s;
+  transition: 0.5s all ease-in-out 0.1s;
+}
+
+#carouseltop01 .carousel .carousel-inner .carousel-item.active .hero {
+  opacity: 1;
+  -webkit-transition: 0.5s all ease-in-out 0.1s;
+  -moz-transition: 0.5s all ease-in-out 0.1s;
+  -ms-transition: 0.5s all ease-in-out 0.1s;
+  -o-transition: 0.5s all ease-in-out 0.1s;
+  transition: 0.5s all ease-in-out 0.1s;
+}
+
+/**/
+.carouselimage {
+  width: 100%;
+  height: auto;
+}

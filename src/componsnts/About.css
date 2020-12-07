@@ -1,0 +1,44 @@
+#about img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 10%;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+#about #second-column {
+  z-index: 10;
+  background-color: white;
+  box-shadow: 0 0 10px 0 gray;
+}
+
+#about #second-column .page-section-heading {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+#about #second-column span {
+  font-family: "Sansita Swashed", cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff0157;
+}
+
+#about #second-column p {
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 1.8;
+  font-weight: 600;
+  color: teal;
+}
+
+#about.p-5 {
+  padding: 3rem 1rem !important;
+}
+#about #second-column {
+  margin-right: -07%;
+}

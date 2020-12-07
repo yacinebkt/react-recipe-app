@@ -1,0 +1,31 @@
+#services .cards-service {
+  padding-top: 40px;
+  text-align: center;
+}
+
+#services .cards {
+  margin-bottom: 25%;
+}
+
+#services .cards-service .cards-service-item:hover .card {
+  /*  border-color: rgba(220, 53, 69, 1);*/
+  background: rgba(220, 53, 69, 0.035);
+}
+
+#services .cards-service .cards-service-item .card-title {
+  margin-top: 350px;
+  font-size: 1.4rem;
+}
+
+.card-footer {
+  padding-bottom: 05%;
+  border-top: none;
+}
+
+li {
+  list-style: none;
+}
+
+.recipeelem {
+  margin-bottom: 7%;
+}

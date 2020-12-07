@@ -1,0 +1,26 @@
+.titel-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titel-menu h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.par {
+  font-size: 0.4rem;
+  font-weight: normal;
+  color: red;
+}
+
+.titel-menu span {
+  font-family: "Sansita Swashed", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ff0157;
+}
